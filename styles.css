@@ -48,25 +48,31 @@ header  div  p{
 
 .box-container{
     display: flex;
-    margin: 50px;
+    margin: 40px;
     width: 70%;
     margin-right: auto;
     margin-left: auto;
-    height: 450px;
-    /*align-items:center;*/
+    height: 550px;
     background: #f5dcd0;
 }
 
+.box-container h2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 50%;
+    text-align: center;
+    font-size: 45px;
+    color: #809a7f;
+    font-family: "Lemonada", sans-serif;
+    letter-spacing: 10px;
+}
+
 .box1{
-    padding-top: 75px;
-    margin-left: -80px;
+    padding-top: 175px;
+    margin-left: -1240px;
     position: absolute;
     z-index: 2;
-    /*width: 200px;
-    font-size: 24px;
-    flex-shrink: 3;
-    align-self: center;
-    margin-left: 15px;*/
 }
 
 .box1 a img{
@@ -81,20 +87,48 @@ header  div  p{
     height: 15em;
     position: absolute;
     z-index: 1;
-    margin-top: 35px;
-    margin-left: 150px;
-
-
-    /*width: 200px;
-    font-size: 29px;
-    flex-shrink: 2;
-    align-self: flex-end;*/
+    margin-top: 135px;
+    margin-left: -1015px;
 }
 
 .box2-text p{
     margin-top: 50px;
     margin-left: 85px;
     color: black;
+    text-align: center;
+    font-family: "Indie Flower", sans-serif;
+    font-size: 25px;
+    line-height: 15px;
+}
+
+.box3{
+    padding-top: 135px;
+    margin-left: -540px;
+    position: absolute;
+    z-index: 1;
+}
+
+.box3 a img{
+    width: 20em;
+    height: 20em;    
+}
+
+.box4{
+    background: white; 
+    width: 20em;
+    height: 15em;
+    position: absolute;
+    margin-top: 350px;
+    margin-left: -355px;
+    border: 3px black dotted;
+    z-index: 2;
+}
+
+.box4-text p{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color:black;
     text-align: center;
     font-family: "Indie Flower", sans-serif;
     font-size: 25px;

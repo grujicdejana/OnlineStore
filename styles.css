@@ -1,0 +1,47 @@
+header{
+    background: #dff1de;
+    width: auto;
+}
+
+header  div  h1{
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    margin: 0;
+    font-family: "Lemonada", sans-serif;
+}
+
+header  div  p{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Indie Flower", sans-serif;
+    opacity: 0.85;
+    margin: 0;
+}
+
+.nav-bar{
+    width: 100%;
+}
+
+.nav-bar ul{
+    margin: -30px;
+    padding: 60px;
+}
+
+.nav-bar ul li{
+    list-style: none;
+    float: left;
+    width: 12.5%;
+}
+
+.nav-bar a {
+    display: block;
+    color: #809a7f;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: "Indie Flower", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+  }

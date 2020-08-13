@@ -50,6 +50,10 @@ header  div  p{
     font-weight: bold;
 }
 
+.nav-bar a:hover{
+    transform: scale(1.5);
+}
+
 .container{
     background: #dbdff9; 
     height: max-content;

@@ -1,6 +1,10 @@
 header{
     background: #dff1de;
     width: auto;
+    border-bottom: 8px black dotted;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
 }
 
 header  div  h1{
@@ -46,6 +50,12 @@ header  div  p{
     font-weight: bold;
 }
 
+.container{
+    background: #dbdff9; 
+    height: max-content;
+    margin-top: -40px;
+}
+
 .box-container{
     display: flex;
     margin: 40px;
@@ -54,6 +64,7 @@ header  div  p{
     margin-left: auto;
     height: 550px;
     background: #f5dcd0;
+    padding-top: 280px;
 }
 
 .box-container h2{
@@ -66,6 +77,7 @@ header  div  p{
     color: #809a7f;
     font-family: "Lemonada", sans-serif;
     letter-spacing: 10px;
+    text-shadow: 10px 8px 8px #a2afa1;
 }
 
 .box1{
@@ -133,4 +145,30 @@ header  div  p{
     font-family: "Indie Flower", sans-serif;
     font-size: 25px;
     line-height: 15px;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 100px;
+    margin: auto;
+    width: 80%;
+}
+
+.product{
+    position: relative;
+}
+
+.product-img a img{
+    width: 25em;
+    height: 25em;
+    border: 4px #f4ede1 dotted;
+}
+
+.product-text{
+    text-align: center;
+    font-size: 20px;
+    font-family: "Indie Flower", sans-serif;
+    font-weight: bold;
+    line-height: 12px;
 }

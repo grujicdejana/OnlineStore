@@ -147,7 +147,22 @@
             </div>
         </div>
     </div>
-    
-
 </body>
+
+<script>
+    const productImages = document.querySelectorAll('.product-img');
+
+    productImages.forEach(productImages => {
+        productImages.addEventListener('mouseover', () => {
+            console.log(productImages.childNodes[1].classList)
+            productImages.childNodes[1].classList.add('product-img-blur');
+        });
+
+        productImages.addEventListener('mouseout', () => {
+            console.log(productImages.childNodes[1].classList)
+            productImages.childNodes[1].classList.remove('product-img-blur');
+        });
+    })
+</script>
+
 </html>

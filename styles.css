@@ -7,6 +7,32 @@ header{
     z-index: 2000;
 }
 
+.wishlist-style{
+    top: 52px;
+    right: 95px;
+    position: absolute;
+}
+
+.wishlist-style i{
+    color:  #809a7f;
+    cursor: pointer;
+    font-size: 40px;
+    opacity: 0.8;
+}
+
+.bag-style{
+    top: 45px;
+    right: 30px;
+    position: absolute;
+}
+
+.bag-style i {
+    color:  #809a7f;
+    cursor: pointer;
+    font-size: 45px;
+    opacity: 0.8;
+}
+
 header  div  h1{
     color: white;
     text-align: center;

@@ -45,12 +45,52 @@
     width: 50px;
 }
 
-.table-style tr td span{
+.table-style td span{
     float: left;
     margin-left: 25px;
     margin-top: -85px;
     font-family: "Indie Flower", sans-serif;
     font-weight: bolder;
-    line-height:35px;
+    line-height:55px;
     font-size: 30px;
 }
+
+.num-selector{
+    width: 150px;
+    height: 100px;
+    top: 30%;
+    margin-left: 25px;
+}
+
+button{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 20%;
+    font-size: 25px;
+    border: none;
+    outline: none;
+}
+
+button:hover{
+    background-color: #aa9890;
+    color: white;
+}
+
+.num-selector input{
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 20%;
+    margin: 0 10px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.num-selector input:hover{
+    background: #aa9890;
+    color: #fff;
+}
+

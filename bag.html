@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styleBag.css">
+    <link rel="stylesheet" href="jquery.nice-number.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.nice-number.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/jquery.nice-number.js"></script>-->
 </head>
 <body>
     <header>
@@ -50,7 +55,12 @@
                     <a href="earrings.html"><img src="images/earring1.jpg" alt="Butterfly earrings"></a>
                 </td>
                 <td>
-                    <span>Butterfly earrings<br>35$</span>                 
+                    <div>
+                        <span>Butterfly earrings<br>35$</span>  
+                    </div>
+                    <div class="num-selector">
+                        <input type="text" value="1">
+                    </div>        
                 </td>
             </tr>
 
@@ -59,7 +69,12 @@
                     <a href="ring1.html"><img src="images/ring1.jpg" alt="Rose gold thin ring"></a>
                 </td>
                 <td>
-                    <span>Rose gold thin ring<br>90$</span>
+                    <div>
+                        <span>Rose gold thin ring<br>90$</span>
+                    </div>
+                    <div class="num-selector">
+                        <input type="text" value="1">
+                    </div>
                 </td>
             </tr>
 
@@ -68,11 +83,22 @@
                     <a href="necklace.html"><img src="images/necklaces2.jpg" alt="Rose gold double necklace"></a>
                 </td>
                 <td>
-                    <span>Rose gold double necklace<br>60$</span>
+                    <div>
+                        <span>Rose gold double necklace<br>60$</span>
+                    </div>
+                    <div class="num-selector">
+                        <input type="text" value="1">
+                    </div>
                 </td>
             </tr>
         </table>
     </div>
-
 </body>
+
+<script>
+    $(function(){
+        $('input[type="text"]').niceNumber();
+    });
+</script>
+
 </html>

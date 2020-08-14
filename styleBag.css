@@ -1,7 +1,7 @@
 .div-table{
     position: absolute;
     margin-top: 50px;
-    top: 80%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: #f5dcd0;
@@ -30,10 +30,6 @@
     width: 60%;
     margin-top: 15px;
     border-spacing: 12px;
-}
-
-.table-style tr td{
-   
 }
 
 .table-style tr td a img{
@@ -92,5 +88,49 @@ button:hover{
 .num-selector input:hover{
     background: #aa9890;
     color: #fff;
+}
+
+.subtotal{
+    border: 3px black dotted;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 58%;
+    margin-top: 15px;
+}
+
+.subtotal span{
+    margin-left: 25px;
+    position: relative;
+    top: 30px;
+    font-family: "Indie Flower", sans-serif;
+    font-weight: bolder;
+    line-height:55px;
+    font-size: 40px;
+}
+
+.checkout{
+    position: relative;
+    width: 27%;
+    margin-left: 450px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.checkout a{
+    font-size: 30px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    background: #aa9890;
+    border: 1px solid #aa9890;
+    color: white;
+    font-family: "Indie Flower", sans-serif;
+    font-weight: bold;
+}
+
+.checkout a:hover{
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%);
 }
 

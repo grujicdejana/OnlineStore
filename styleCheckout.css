@@ -1,0 +1,150 @@
+.container-checkout{
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 190px;
+}
+
+.text-style{
+    margin: auto;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    background-color: white;
+}
+
+.text-style i{
+    font-size: 35px;
+    color: #809a7f;
+}
+
+.text-style span{
+    font-size: 23px;
+    font-family: "Indie Flower", sans-serif;
+    font-weight: bolder;
+}
+
+.summary-order{
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    /*display: flex;*/
+    display: table;
+    margin-bottom: 10px;
+}
+
+.div-form{
+    width: 50%;
+    height: auto;
+    /*flex: 1;*/
+    display: table-cell;
+}
+
+.div-form div{
+    border: 3px dotted black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 70%;
+    padding: 20px;
+}
+
+.div-form p{
+    font-size: 40px;
+    margin-top: 10px;
+    font-weight: bolder;
+    font-family: "Indie Flower", sans-serif;
+    margin-left: 20px;
+}
+
+.div-form input{
+    font-size: 25px;
+    font-family: "Inide Flower", sans-serif;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding: 5px;
+    width: 85%;
+    border: 1px solid rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.div-form a{
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: "Indie Flower", sans-serif;
+    font-weight: bolder;
+}
+
+.div-form button{
+    font-size: 25px;
+    margin-left: 80px;
+    width: 291px;
+    height: 2em;
+    background: #aa9890;
+    border: 1px solid #aa9890;
+    color: white;
+    font-family: "Indie Flower", sans-serif;
+    font-weight: bold;
+    outline: none;
+}
+
+.div-form button:hover{
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%);
+}
+
+.div-table{
+    width: 50%;
+    height: auto;
+    margin-top: 5px;
+    /*flex: 1;*/
+    display: table-cell;
+}
+
+.div-table .border{
+    border: 3px dotted black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    width: 70%;
+    padding: 20px;
+}
+
+.div-table p{
+    font-size: 40px;
+    margin-top: 10px;
+    font-weight: bolder;
+    font-family: "Indie Flower", sans-serif;
+    margin-left: 20px;
+}
+
+.table-style{
+    width: 60%;
+    border-spacing: 2px;
+}
+
+.table-style tr td img{
+    width: 10em;
+    height: 10em;
+}
+
+.table-style td span{
+    margin-left: 25px;
+    width: 100%;
+    font-family: "Indie Flower", sans-serif;
+    font-weight: bolder;
+    line-height:35px;
+    font-size: 20px;
+}
+
+.subtotal span{
+    position: absolute;
+    right: 8%;
+    margin-top: -3%;
+    font-family: "Indie Flower", sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+}

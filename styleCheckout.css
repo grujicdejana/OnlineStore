@@ -27,7 +27,7 @@
 .summary-order{
     width: 100%;
     height: auto;
-    margin-top: 0;
+    margin-top: 5px;
     /*display: flex;*/
     display: table;
     margin-bottom: 10px;
@@ -40,7 +40,7 @@
     display: table-cell;
 }
 
-.div-form div{
+.style-div{
     border: 3px dotted black;
     margin-left: auto;
     margin-right: auto;
@@ -60,7 +60,7 @@
 .div-form input{
     font-size: 25px;
     font-family: "Inide Flower", sans-serif;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     margin-left: 20px;
     padding: 5px;
     width: 85%;
@@ -77,6 +77,39 @@
     font-family: "Indie Flower", sans-serif;
     font-weight: bolder;
 }
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control i{
+    position: absolute;
+    left: 500px;
+    visibility: hidden;
+}
+
+.field small{
+    margin-left: 20px;
+    visibility: hidden;
+}
+
+.field.success input{
+    border: transparent;
+}
+
+.field.error input{
+    border: 3px solid black;
+}
+
+.field.error small{
+    visibility: visible;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
 
 .div-form button{
     font-size: 25px;

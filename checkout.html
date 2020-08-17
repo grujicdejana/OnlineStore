@@ -27,18 +27,72 @@
     
             <div class="summary-order">
                 <div class="div-form"> <!--div za formu-->
-                    <div>
+                    <div class="style-div">
                         <p>Shipping address</p>
-                        <input type="text" placeholder="First name*">
-                        <input type="text" placeholder="Last name*"><br>
-                        <input type="text" placeholder="City*"><br>
-                        <input type="text" placeholder="Street and housenumber*"><br><br>
-                        <p>Contact information</p>
-                        <input type="tel" placeholder="Phone*"><br>
-                        <input type="email" placeholder="Email*"><br><br>
+                        <form class="form" id="form">
+                            <div class="form-control">
+                                <div class="field">
+                                    <input type="text" placeholder="First name*" id="firstName">
+                                    <i class="fa fa-check-circle"></i>
+                                    <i class="fa fa-exclamation-circle"></i>
+                                    <br>
+                                    <small>Error message</small>
+                                </div>
+                                
+                                <div class="field">
+                                    <input type="text" placeholder="Last name*" id=lastName>
+                                    <i class="fa fa-check-circle"></i>
+                                    <i class="fa fa-exclamation-circle"></i>
+                                    <br>
+                                    <small>Error message</small>
+                                </div>
 
-                        <a href="bag.html">&lt; Return to cart</a>
-                        <button type="button">Place your order</button>
+                                <div class="field">
+                                    <input type="text" placeholder="City*" id=city>
+                                    <i class="fa fa-check-circle"></i>
+                                    <i class="fa fa-exclamation-circle"></i>
+                                    <br>
+                                    <small>Error message</small>
+                                </div>
+
+                                <div class="field">                                
+                                    <input type="text" placeholder="Street and housenumber*" id="street">
+                                    <i class="fa fa-check-circle"></i>
+                                    <i class="fa fa-exclamation-circle"></i>
+                                    <br>
+                                    <small>Error message</small>
+                                </div>
+
+
+                                <br>
+                                <p>Contact information</p>
+
+                                <div class="field">
+                                    <input type="tel" placeholder="Phone*" id="phone">
+                                    <i class="fa fa-check-circle"></i>
+                                    <i class="fa fa-exclamation-circle"></i>
+                                    <br>
+                                    <small>Error message</small>
+                                </div>
+
+                                <div class="field">
+                                    <input type="email" placeholder="Email*" id="email">
+                                    <i class="fa fa-check-circle"></i>
+                                    <i class="fa fa-exclamation-circle"></i>
+                                    <br>
+                                    <small>Error message</small>
+                                </div>
+
+                                <br><br><br>
+                                <a href="bag.html">&lt; Return to cart</a>
+                                <button type="submit">Place your order</button>
+                            </div>
+
+                            
+                            <!--<input type="submit" value="Place your order">-->
+                        </form>
+                        
+                        <!--<button type="button">Place your order</button>-->
                     </div>
                 </div>
         
@@ -53,7 +107,7 @@
                                 </td>
                                 <td>
                                     <div>
-                                        <span>Butterfly earrings</span><br><span>35$ x 1</span>  
+                                        <p>Butterfly earrings</p><br><p>35$ x 1</p>  
                                     </div>       
                                 </td>
                             </tr>
@@ -64,7 +118,7 @@
                                 </td>
                                 <td>
                                     <div>
-                                        <span>Rose gold thin ring</span><br><span>90$ x 1</span>
+                                        <p>Rose gold thin ring</p><br><p>90$ x 1</p>
                                     </div>
                                 </td>
                             </tr>
@@ -75,7 +129,7 @@
                                 </td>
                                 <td>
                                     <div>
-                                        <span>Double necklace</span><br><span>60$ x 1</span>
+                                        <p>Double necklace</p><br><p>60$ x 1</p>
                                     </div>
                                 </td>
                             </tr>
@@ -90,5 +144,139 @@
         </div>
     </div>
 </body>
+
+<script>
+    const form = document.getElementById('form');
+    const firstname = document.getElementById('firstName');
+    const lastname = document.getElementById('lastName');
+    const city = document.getElementById('city');
+    const address = document.getElementById('street');
+    const phone = document.getElementById('phone');
+    const email = document.getElementById('email');
+ 
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        checkInputs();
+    });
+
+    function checkInputs(){
+        const firstnameValue = firstname.value;
+        const lastnameValue = lastname.value;
+        const cityValue = city.value;
+        const addressValue = address.value;
+        const phoneValue = phone.value;
+        const emailValue = email.value;
+
+        //validate for first name
+        if(firstnameValue === '')
+        {
+            setErrorFor(firstname, 'First name cannot be blank');
+        }
+        else if(!onlyLetter(firstnameValue)){
+            setErrorFor(firstname, 'First name can only contain letter');
+        }
+        else
+        {
+            setSuccessFor(firstname);
+        }
+
+        //validate for last name
+        if(lastnameValue === '')
+        {
+            setErrorFor(lastname, 'Last name cannot be blank');
+        }
+        else if(!onlyLetter(lastnameValue)){
+            setErrorFor(lastname, 'Last name can only contain letter');
+        }
+        else
+        {
+            setSuccessFor(lastname);
+        }
+
+        //validate for city
+        if(cityValue === '')
+        {
+            setErrorFor(city, 'City cannot be blank');
+        }
+        else if(!onlyLetter(cityValue)){
+            setErrorFor(city, 'City can only contain letter');
+        }
+        else
+        {
+            setSuccessFor(city);
+        }
+
+        //validate for address
+        if(addressValue === '')
+        {
+            setErrorFor(address, 'Address cannot be blank');
+        }
+        else
+        {
+            setSuccessFor(address);
+        }
+
+        //validate for phone
+        if(phoneValue === '')
+        {
+            setErrorFor(phone, 'Phone cannot be blank');
+        }
+        else if(!onlyNumbers(phoneValue))
+        {
+            setErrorFor(phone, 'A number can only contain numbers (minimum 9 digits)');
+        }
+        else
+        {
+            setSuccessFor(phone);
+        }
+
+        //validate for email
+        if(emailValue === '')
+        {
+            setErrorFor(email, 'Email cannot be blank');
+        }
+        else if(!validateEmail(emailValue))
+        {
+            setErrorFor(email, 'Email is not valid');
+        }
+        else
+        {
+            setSuccessFor(email);
+        }
+
+    }
+
+    function setErrorFor(input, message){
+        const fieldDiv = input.parentElement;
+        const small = fieldDiv.querySelector('small');
+
+        small.innerText = message;
+
+        fieldDiv.className = 'field error';
+    }
+
+    function setSuccessFor(input){
+        const fieldDiv = input.parentElement;
+
+        fieldDiv.className = 'field success';
+    }
+
+    function validateEmail(email) {
+        const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return regex.test(String(email).toLowerCase());
+    }
+
+    function onlyLetter(input){
+        const regex = /^[a-zA-Z\s]+$/;
+        return regex.test(input);
+    }
+
+    function onlyNumbers(input) {
+        const regex = /^[0-9\s]{9,}/; //\s
+        return regex.test(input);
+    }
+
+</script>
 
 </html>

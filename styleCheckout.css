@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .container-checkout{
     width: 100%;
     height: 350px;
@@ -28,15 +32,12 @@
     width: 100%;
     height: auto;
     margin-top: 5px;
-    /*display: flex;*/
-    display: table;
-    margin-bottom: 10px;
+    display: table; 
 }
 
 .div-form{
     width: 50%;
     height: auto;
-    /*flex: 1;*/
     display: table-cell;
 }
 
@@ -44,13 +45,13 @@
     border: 3px dotted black;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
     width: 70%;
     padding: 20px;
+    background: #d1d5ed
 }
 
 .div-form p{
-    font-size: 40px;
+    font-size: 35px;
     margin-top: 10px;
     font-weight: bolder;
     font-family: "Indie Flower", sans-serif;
@@ -58,7 +59,7 @@
 }
 
 .div-form input{
-    font-size: 25px;
+    font-size: 20px;
     font-family: "Inide Flower", sans-serif;
     margin-bottom: 15px;
     margin-left: 20px;
@@ -79,15 +80,15 @@
 }
 
 .form-control{
+    margin-top: -20px;
     margin-bottom: 10px;
-    padding-bottom: 20px;
+
     position: relative;
 }
 
-.form-control i{
-    position: absolute;
-    left: 500px;
-    visibility: hidden;
+.form-control p{
+    margin-top: -10px;
+    font-size: 35px;
 }
 
 .field small{
@@ -113,8 +114,8 @@
 
 .div-form button{
     font-size: 25px;
-    margin-left: 80px;
-    width: 291px;
+    margin-left: 20px;
+    width: 87%;
     height: 2em;
     background: #aa9890;
     border: 1px solid #aa9890;
@@ -132,13 +133,12 @@
 .div-table{
     width: 50%;
     height: auto;
-    margin-top: 5px;
-    /*flex: 1;*/
     display: table-cell;
 }
 
 .div-table .border{
-    border: 3px dotted black;
+    /*border: 3px dotted black;
+    background: #d1d5ed;*/
     margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
@@ -147,7 +147,7 @@
 }
 
 .div-table p{
-    font-size: 40px;
+    font-size: 35px;
     margin-top: 10px;
     font-weight: bolder;
     font-family: "Indie Flower", sans-serif;
@@ -155,28 +155,31 @@
 }
 
 .table-style{
-    width: 60%;
-    border-spacing: 2px;
+    margin-top: -40px;
 }
 
 .table-style tr td img{
     width: 10em;
     height: 10em;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
-.table-style td span{
-    margin-left: 25px;
+.table-style td p{
+    margin-left: 20px;
     width: 100%;
     font-family: "Indie Flower", sans-serif;
     font-weight: bolder;
-    line-height:35px;
-    font-size: 20px;
+    line-height: 5px;
+    font-size: 25px;
+}
+
+.subtotal{
+    margin-top: 4px;
 }
 
 .subtotal span{
-    position: absolute;
-    right: 8%;
-    margin-top: -3%;
+    margin-left: 20px;
     font-family: "Indie Flower", sans-serif;
     font-weight: bolder;
     font-size: 40px;

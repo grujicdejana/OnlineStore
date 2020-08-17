@@ -1,0 +1,43 @@
+body{
+    background: #f5dcd0;
+}
+
+.contact-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 300px;
+}
+
+.contact-div div{
+    width: 100%;
+}
+
+.contact-div h2{
+    margin-top: 10px;
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Lemonada", sans-serif;
+}
+
+.contact div{
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.contact div a{
+    text-decoration: none;
+    padding: 50px;
+    font-size: 700%;
+    color: black;
+}
+
+.contact div p{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: "Indie Flower", sans-serif;
+    line-height: 15px;
+}

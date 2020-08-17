@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="uft-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jewelry Palace</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="views.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Jewelry Palace</h1>
+            <p>Life isn't perfect but your jewelry can be.</p>      
+        </div> 
+        
+        <div class="wishlist-style">
+            <a href="#"><i class="fa fa-heart"></i></a>
+        </div>
+
+        <div class="bag-style">
+            <a href="bag.html"><i class="fa fa-shopping-bag"></i></a>
+        </div>
+
+        <nav class="nav-bar">
+            <ul> 
+                <li><a href="earringsView.html">earrings</a></li>
+                <li><a href="necklacesView.html">necklaces</a></li>
+                <li><a href="braceletsView.html">bracelets</a></li>
+                <li><a href="watchesView.html">watches</a></li>
+                <li><a href="ringsView.html">rings</a></li>
+                <li><a href="index.html" style="opacity: 0.6;">home</a></li>
+                <li><a href="about.html" style="opacity: 0.6;">about</a></li>
+                <li><a href="contact.html" style="opacity: 0.6;">contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="item-container">
+        <div class="items">
+            <div class="item"> <!--u okviru ovog diva, bice jedan div za sliku, i jedan div za tekst ispod slike-->
+                <div class="product-img">
+                    <a href="bestseller1.html">
+                        <img src="images/bracelet1.jpg" alt="Rose gold bracelet">
+                    </a>
+                </div>
+
+                <div class="product-text">
+                    <p><label style="font-weight: bolder;">Name:</label>Rose gold bracelet</p>                
+                    <p><label style="font-weight: bolder;">Price: </label> 50$</p>
+                </div>
+            </div>
+
+            <div class="item"> <!--u okviru ovog diva, bice jedan div za sliku, i jedan div za tekst ispod slike-->
+                <div class="product-img">
+                    <a href="bracelet.html">
+                        <img src="images/bracelet2.jpg" alt="Rose gold bracelet">
+                    </a>
+                </div>
+
+                <div class="product-text">
+                    <p><label style="font-weight: bolder;">Name:</label>Rose gold bracele</p>                
+                    <p><label style="font-weight: bolder;">Price: </label> 40$</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    const productImages = document.querySelectorAll('.product-img');
+
+    productImages.forEach(productImages => {
+        productImages.addEventListener('mouseover', () => {
+            console.log(productImages.childNodes[1].classList)
+            productImages.childNodes[1].classList.add('product-img-blur');
+        });
+
+        productImages.addEventListener('mouseout', () => {
+            console.log(productImages.childNodes[1].classList)
+            productImages.childNodes[1].classList.remove('product-img-blur');
+        });
+    })
+</script>
+
+</html>

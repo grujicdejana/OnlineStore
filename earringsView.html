@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="views.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -39,26 +39,38 @@
         </nav>
     </header>
 
-    <div class="contact-div">
-        <div class="title">
-            <h2>Contact us</h2>
-        </div>
+    <div class="item-container">
+        <div class="items">
+            <div class="item"> <!--u okviru ovog diva, bice jedan div za sliku, i jedan div za tekst ispod slike-->
+                <div class="product-img">
+                    <a href="earrings.html">
+                        <img src="images/earring1.jpg" alt="Butterfly earrings">
+                    </a>
+                </div>
 
-        <div class="contact">
-            <div>
-                <a href="mailto:dejanagrujic64@gmail.com"><i class="fa fa-envelope"></i></a>
-            </div>
-            <br><br>
-            <div>
-                <a href="tel:123-456-7890"><i class="fa fa-phone"></i></a>
-            </div>
-
-            <br><br>
-            <div style="width: 50%;">
-                <p>Hours of Operation:</p>
-                <p>Monday-Friday: 8:00AM - 10:00PM</p>
+                <div class="product-text">
+                    <p><label style="font-weight: bolder;">Name:</label>Butterfly earrings</p>                
+                    <p><label style="font-weight: bolder;">Price: </label> 35$</p>
+                </div>
             </div>
         </div>
     </div>
 </body>
+
+<script>
+    const productImages = document.querySelectorAll('.product-img');
+
+    productImages.forEach(productImages => {
+        productImages.addEventListener('mouseover', () => {
+            console.log(productImages.childNodes[1].classList)
+            productImages.childNodes[1].classList.add('product-img-blur');
+        });
+
+        productImages.addEventListener('mouseout', () => {
+            console.log(productImages.childNodes[1].classList)
+            productImages.childNodes[1].classList.remove('product-img-blur');
+        });
+    })
+</script>
+
 </html>

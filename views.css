@@ -1,0 +1,18 @@
+body{
+    background: #dbdff9;
+}
+
+.item-container{ 
+    height: auto;
+    position: absolute;
+    top: 270px;
+    width: 100%;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 100px;
+    margin: auto;
+    width: 80%;
+}

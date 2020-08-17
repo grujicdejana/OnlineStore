@@ -87,12 +87,7 @@
                                 <a href="bag.html">&lt; Return to cart</a>
                                 <button type="submit">Place your order</button>
                             </div>
-
-                            
-                            <!--<input type="submit" value="Place your order">-->
                         </form>
-                        
-                        <!--<button type="button">Place your order</button>-->
                     </div>
                 </div>
         
@@ -168,81 +163,110 @@
         const phoneValue = phone.value;
         const emailValue = email.value;
 
+        var successName = false;
+        var succesLastName = false;
+        var succesCity = false;
+        var successAddress = false;
+        var successPhone = false;
+        var successEmail = false;
+
         //validate for first name
         if(firstnameValue === '')
         {
             setErrorFor(firstname, 'First name cannot be blank');
+            successName = false;
         }
         else if(!onlyLetter(firstnameValue)){
             setErrorFor(firstname, 'First name can only contain letter');
+            successName = false;
         }
         else
         {
             setSuccessFor(firstname);
+            successName = true;
         }
 
         //validate for last name
         if(lastnameValue === '')
         {
             setErrorFor(lastname, 'Last name cannot be blank');
+            succesLastName = false;
         }
         else if(!onlyLetter(lastnameValue)){
             setErrorFor(lastname, 'Last name can only contain letter');
+            succesLastName = false;
         }
         else
         {
             setSuccessFor(lastname);
+            succesLastName = true;
         }
 
         //validate for city
         if(cityValue === '')
         {
             setErrorFor(city, 'City cannot be blank');
+            succesCity = false;
         }
         else if(!onlyLetter(cityValue)){
             setErrorFor(city, 'City can only contain letter');
+            succesCity = false;
         }
         else
         {
             setSuccessFor(city);
+            succesCity = true;
         }
 
         //validate for address
         if(addressValue === '')
         {
             setErrorFor(address, 'Address cannot be blank');
+            successAddress = false;
         }
         else
         {
             setSuccessFor(address);
+            successAddress = true;
         }
 
         //validate for phone
         if(phoneValue === '')
         {
             setErrorFor(phone, 'Phone cannot be blank');
+            successPhone = false;
         }
         else if(!onlyNumbers(phoneValue))
         {
             setErrorFor(phone, 'A number can only contain numbers (minimum 9 digits)');
+            successPhone = false;
         }
         else
         {
             setSuccessFor(phone);
+            successPhone = true;
         }
 
         //validate for email
         if(emailValue === '')
         {
             setErrorFor(email, 'Email cannot be blank');
+            successEmail = false;
         }
         else if(!validateEmail(emailValue))
         {
             setErrorFor(email, 'Email is not valid');
+            successEmail = false;
         }
         else
         {
             setSuccessFor(email);
+            successEmail = true;
+        }
+
+        if(successName !== false && succesLastName !== false && succesCity !== false && successAddress !== false && successPhone !== false && successEmail !== false)
+        {
+            alert('Order shipped');
         }
 
     }

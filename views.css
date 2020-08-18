@@ -16,3 +16,9 @@ body{
     margin: auto;
     width: 80%;
 }
+
+@media screen and (max-width: 980px){
+    .items{
+        margin-top: 20%;
+    }
+}

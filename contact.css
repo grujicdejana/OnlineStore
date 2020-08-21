@@ -65,3 +65,40 @@ body{
         line-height: 30px;
     }
 }
+
+@media screen and (max-width: 650px){
+    .contact div p{
+        font-size: 250%;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .contact div p{
+        font-size: 220%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .contact div p{
+        font-size: 200%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .contact div p{
+        font-size: 180%;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .contact div p{
+        font-size: 150%;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .contact div p{
+        font-size: 130%;
+    }
+}

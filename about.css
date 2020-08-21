@@ -85,3 +85,45 @@ body{
         float: left;
     }
 }
+
+@media screen and (max-width:999px){
+    .wrapper{
+        padding-top: 28%;
+    }
+}
+
+@media screen and (max-width: 980px){
+    .wrapper{
+        padding-top: 55%;
+    }
+}
+
+@media screen and (max-width: 830px){
+    .wrapper{
+        padding-top: 65%;
+    }
+}
+
+@media screen and (max-width: 510px){
+    .wrapper{
+        padding-top: 75%;
+    }
+}
+
+@media screen and (max-width: 410px){
+    .wrapper{
+        padding-top: 85%;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .wrapper{
+        padding-top: 90%;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .wrapper{
+        padding-top: 120%;
+    }
+}

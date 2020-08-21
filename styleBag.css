@@ -1,7 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .div-table{
     position: absolute;
     margin-top: 50px;
-    top: 85%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: #f5dcd0;
@@ -134,3 +139,335 @@ button:hover{
     filter: brightness(70%);
 }
 
+@media screen and (max-width: 1580px){
+    .checkout{
+        margin-left: 380px;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .checkout{
+        margin-left: 320px;
+    }
+
+    .subtotal span{
+        font-size: 220%;
+    }
+
+    .table-style td span{
+        font-size: 180%;
+        margin-top: -80px;
+    }
+
+    .num-selector input{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .table-style td span{
+        font-size: 170%;
+    }
+
+    .num-selector input{
+        width: 17px;
+        height: 17px;
+    }
+
+    .subtotal {
+        width: 57.5%;
+    }
+}
+
+@media screen and (max-width: 1230px){
+    .checkout{
+        margin-left: 260px;
+    }
+
+    .subtotal span{
+        font-size: 190%;
+    }
+
+    .table-style tr td a img{
+        width: 12em;
+        height: 12em;
+    }
+
+    .table-style td span{
+        font-size: 150%;
+        margin-top: -60px;
+    }
+
+    .num-selector input{
+        width: 14px;
+        height: 14px;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .checkout{
+        margin-left: 220px;
+    } 
+
+    .subtotal span{
+        font-size: 170%;
+    }
+
+    .table-style{
+        width: 70%;
+    }
+
+    .subtotal{
+        width: 67%;
+    }
+}
+
+@media screen and (max-width: 980px){
+    .div-table{
+        top: 115%;
+    }
+
+    .table-style{
+        width: 75%;
+    }
+
+    .subtotal{
+        width: 71.5%;
+    }
+}
+
+@media screen and (max-width:920px){
+    .num-selector input{
+        width: 12px;
+        height: 12px;
+    }
+
+    .table-style td span{
+        font-size: 120%;
+        margin-top: -50px;
+    }
+
+    .table-style tr td a img{
+        width: 11em;
+        height: 11em;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .subtotal{
+        width: 75%;
+    }
+
+    .div-table{
+        top: 110%;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .subtotal{
+        width: 79%;
+    }
+}
+
+@media screen and (max-width: 740px){
+    .subtotal{
+        width: 81%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .div-table{
+        width: 80%;
+        top: 100%;
+    }
+
+    .table-style{
+        width: 85%;
+    }
+
+    .table-style td span{
+        font-size: 130%;       
+    }
+}
+
+@media screen and (max-width: 580px){
+    .subtotal{
+        width: 84%;
+    }
+
+    .div-table{
+        width: 85%;
+        top: 95%;
+    }
+
+    .table-style{
+        width: 90%;
+    }
+
+    .table-style tr td a img{
+        width: 10em;
+        height: 10em;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .div-table{
+        width: 95%;
+    }
+    
+}
+
+@media screen and (max-width: 460px){
+    .table-style tr td span{
+        font-size: 120%;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .subtotal{
+        width: 89%;
+    }
+
+    .checkout{
+        margin-left: 190px;
+        width: 20%;
+    }
+
+    .checkout a{
+        font-size: 170%;
+    }
+
+    .subtotal{
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .subtotal{
+        width: 92.5%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .div-table{
+        top: 85%;
+        width: 100%;
+    }
+
+    .table-style{
+        border:transparent;
+    }
+
+    .subtotal{
+        border: transparent;
+    }
+
+    .checkout{
+        margin-left: 200px;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .div-table{  
+       margin-left: 1.5%;
+    }
+
+    .table-style tr td span{
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .div-table{
+        margin-left: 5%;
+        width: 100%;
+    }
+
+    .table-style tr td span{
+        margin-left: 5px;
+        font-size: 135%;
+    }
+
+    .table-style tr td img{
+        width: 7em;
+        height: 7em;
+        margin-left: -5px;
+    }
+
+    .num-selector input{
+        width: 10px;
+        height: 10px;
+        font-size: 15px;
+        margin: -30px 10px 0px;
+    }
+    
+    button{
+        width: 30px;
+        height: 30px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .table-style tr td span{
+        font-size: 130%;
+    }
+
+    .table-style tr td img{
+        width: 5em;
+        height: 5em;
+    }
+
+    .div-table{
+        width: 350px;
+    }
+
+    .table-style{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .table-style tr td span{
+        font-size: 130%;
+        line-height: 30px;
+    } 
+
+    .checkout{
+        margin-left: 170px;
+    }
+
+    .subtotal span{
+        font-size: 140%;
+    }
+    
+    .num-selector input{
+        width: 7px;
+        height: 7px;
+        font-size: 12px;
+        margin: -30px 10px 0px;
+    }
+    
+    button{
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 280px){
+    .div-table{
+        margin-left: 30px;
+    }
+
+    .table-style tr td span{
+        margin-top: 5px;
+    }
+}

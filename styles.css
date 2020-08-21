@@ -109,7 +109,7 @@ header  div  p{
     }
     
     .bag-style{
-        top: 35%;
+        top: 34.5%;
         right: 38%;
     }
     
@@ -128,6 +128,82 @@ header  div  p{
     .vis-hid{
         visibility: visible;
         display: block;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .products{
+        margin-top: -25%;
+    }
+
+    header  div  h1{
+        font-size: 250%;
+    }
+
+    header  div  p{
+        font-size: 120%;
+    }
+
+    .nav-bar a{
+        font-size: 120%;
+    }
+
+    .wishlist-style{
+        top: 37%;
+    }
+
+    .wishlist-style i{
+        font-size: 220%;
+    }
+
+    .bag-style{
+        top: 36.5%;
+    }
+
+    .bag-style i{
+        font-size: 230%;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .wishlist-style{
+        top: 39%;
+    }
+
+    .wishlist-style i{
+        font-size: 200%;
+    }
+
+    .bag-style{
+        top: 38%;
+    }
+
+    .bag-style i{
+        font-size:  205%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .products{
+        margin-top: -30%;
+    }
+}
+
+@media screen and (max-width: 350px){
+    header  div  h1{
+        font-size: 220%;
+    }
+
+    header  div  p{
+        font-size: 100%;
+    }
+
+    .wishlist-style i{
+        font-size: 190%;
+    }
+
+    .bag-style i{
+        font-size: 190%;
     }
 }
 

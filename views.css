@@ -21,4 +21,29 @@ body{
     .items{
         margin-top: 20%;
     }
+
+}
+
+@media screen and (max-width: 900px){
+    .items{
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+}
+
+@media screen and (max-width: 800px){
+    .product-text{
+        font-size: 110%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .items{
+        padding-top: 50px;      
+    }
+}
+
+@media screen and (max-width: 400px){
+    .items{
+        margin-top: 15%;
+    }
 }

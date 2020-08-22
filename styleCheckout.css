@@ -137,8 +137,6 @@
 }
 
 .div-table .border{
-    /*border: 3px dotted black;
-    background: #d1d5ed;*/
     margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
@@ -183,4 +181,279 @@
     font-family: "Indie Flower", sans-serif;
     font-weight: bolder;
     font-size: 40px;
+}
+
+@media screen and (max-width: 1191px){
+    .div-table .border{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1043px){
+    .div-table .border{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 988px){
+    .div-form p{
+        font-size: 200%;
+        margin-top: -20px;
+    }
+
+    .div-table p{
+        font-size: 200%;
+    }
+
+    .subtotal span{
+        font-size: 230%;
+    }
+
+    .table-style tr td img{
+        width: 9.5em;
+        height: 9.5em;
+    }
+}
+
+@media screen and (max-width: 980px){
+    .container-checkout{
+        top:150px;
+    }
+}
+
+@media screen and (max-width: 930px){
+    input::placeholder{
+        font-size: 90%;
+    }
+
+    .div-form p{
+        font-size: 190%;
+    }
+}
+
+@media screen and (max-width: 910px){
+    .table-style tr td img{
+        width: 9em;
+        height: 9em;
+    }
+
+    .table-style tr td p{
+        font-size: 150%;
+    }
+
+    .div-table .border{
+        width: 100%;
+        margin-left: -5%;
+    }
+
+    .div-form{
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 871px){
+    .table-style tr td p{
+        font-size: 130%;
+    }
+}
+
+@media screen and (max-width: 821px){
+    .table-style tr td p{
+        font-size: 120%;
+    }
+
+    .subtotal span{
+        font-size: 210%;
+    }
+
+    .subtotal{
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 802px){
+    .subtotal{
+        margin-top: 50px;
+    }
+
+    .div-form p{
+        font-size: 180%;
+    }
+}
+
+@media screen and (max-width: 793px){
+    .table-style td p{
+        line-height: 20px;
+    }
+
+    input::placeholder{
+        font-size: 80%;
+    }
+
+    .subtotal{
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .div-form p{
+        font-size: 170%;
+    }
+}
+
+@media screen and (max-width: 735px){
+    .div-form p{
+        font-size: 160%;
+    }
+
+    input::placeholder{
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .summary-order{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .div-form{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .div-form p{
+        font-size: 200%;
+    }
+
+    .div-table{
+        width: 100%;
+        margin-top: -10px;
+    }
+
+    .div-table .border{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
+    .table-style tr td img{
+        width: 10em;
+        height: 10em;
+    }
+
+    .border p{
+        font-size: 250%;
+    }
+    
+    .table-style tr td p{
+        font-size: 170%;
+    }
+
+    .div-table .border{
+        height: 400px;
+        overflow: hidden;
+        overflow-y: scroll;
+        border: 3px dotted black;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:550px){
+    .table-style td p{
+        line-height: 30px;
+    }
+
+    .div-table .border{
+        width: 90%;
+    }
+
+    .style-div{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .table-style td p{
+        font-size: 160%;
+    
+    }
+
+    .table-style td div{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .text-style i{
+        font-size: 30px;
+    }
+    
+    .text-style span{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .table-style tr td p{
+        font-size: 140%;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .table-style tr td img{
+        width: 9em;
+        height: 9em;
+    }
+
+    .table-style tr td p{
+        font-size: 110%;
+        margin-left: 5%;
+    }
+
+    .div-form p{
+        font-size: 170%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .table-style tr td img{
+        width: 8em;
+        height: 8em;
+    }
+
+
+    .subtotal{
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 315px){
+    .text-style i{
+        font-size: 25px;
+    }
+    
+    .text-style span{
+        font-size: 14px;
+    }
+
+    .div-form p{
+        font-size: 150%;
+    }
+}
+
+@media screen and (max-width: 303px){
+    .container-checkout{
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 287px){
+    .div-form p{
+        font-size: 140%;
+    }
+
+    input::placeholder{
+        font-size: 65%;
+    }
 }

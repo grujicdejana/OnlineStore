@@ -146,6 +146,10 @@ button:hover{
 }
 
 @media screen and (max-width: 1400px){
+    .div-table{
+        margin-top: 8%;
+    }
+
     .checkout{
         margin-left: 320px;
     }
@@ -267,6 +271,10 @@ button:hover{
 @media screen and (max-width: 760px){
     .subtotal{
         width: 79%;
+    }
+
+    .div-table{
+        margin-top: 5%;
     }
 }
 

@@ -82,6 +82,149 @@ header  div  p{
     display: none;
 }
 
+.container{ 
+    height: auto;
+    margin-top: -4%;
+    width: 100%;
+    padding-bottom: -150%;
+}
+
+.box-container{
+    display: flex;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 550px;
+    background: #f5dcd0;
+    padding-top: 20%;
+}
+
+.box-container h2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 50%;
+    text-align: center;
+    font-size: 280%;
+    color: #809a7f;
+    font-family: "Lemonada", sans-serif;
+    letter-spacing: 10px;
+    text-shadow: 10px 8px 8px #a2afa1;
+}
+
+.box1{
+    padding-top: 10%;
+    margin-left: -80%;
+    position: absolute;
+    z-index: 2;
+}
+
+.box1 a img{
+    width: 60%;
+    height: 60%; 
+    border: 3px black dotted;   
+}
+
+.box1 a img:hover{
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.box2{
+    background: white; 
+    width: 23%;
+    height: 28%;
+    position: absolute;
+    z-index: 1;
+    margin-top: 8%;
+    margin-left: -65%;
+}
+
+.box2-text p{
+    margin-top: 15%;
+    margin-left: 25%;
+    color: black;
+    text-align: center;
+    font-family: "Indie Flower", sans-serif;
+    font-size: 150%;
+    line-height: 15px;
+}
+
+.box3{
+    padding-top: 8%;
+    margin-left: -35%;
+    position: absolute;
+    z-index: 1;
+}
+
+.box3 a img{
+    width: 60%;
+    height: 60%;    
+}
+
+.box3 a img:hover{
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.box4{
+    background: white; 
+    width: 20%;
+    height: 27%;
+    position: absolute;
+    margin-top: 21%;
+    margin-left: -23%;
+    border: 3px black dotted;
+    z-index: 2;
+}
+
+.box4-text p{
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    color:black;
+    text-align: center;
+    font-family: "Indie Flower", sans-serif;
+    font-size: 150%;
+    line-height: 15px;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    padding-top: 8%;
+    /*margin: auto;
+    width: 85%;*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+/*.product{
+    position: relative;
+}*/
+
+.product-img a img{
+    width: 80%;
+    height: 80%;
+    border: 4px #f4ede1 dotted;
+}
+
+.product-text{
+    margin-left: 0;
+    width: 80%;
+    text-align: center;
+    font-size: 125%;
+    font-family: "Indie Flower", sans-serif;
+    font-weight: bold;
+    line-height: 12px;
+}
+
+.product-img-blur{
+    transition: 1s;
+    filter: blur(5px);
+}
+
 @media screen and (max-width: 980px){
     header  div  h1{
         font-size: 280%;
@@ -207,113 +350,7 @@ header  div  p{
     }
 }
 
-.container{ 
-    height: auto;
-    margin-top: -4%;
-    width: 100%;
-    padding-bottom: -150%;
-}
-
-.box-container{
-    display: flex;
-    width: 75%;
-    margin-right: auto;
-    margin-left: auto;
-    height: 550px;
-    background: #f5dcd0;
-    padding-top: 20%;
-}
-
-.box-container h2{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    width: 50%;
-    text-align: center;
-    font-size: 280%;
-    color: #809a7f;
-    font-family: "Lemonada", sans-serif;
-    letter-spacing: 10px;
-    text-shadow: 10px 8px 8px #a2afa1;
-}
-
-.box1{
-    padding-top: 10%;
-    margin-left: -80%;
-    position: absolute;
-    z-index: 2;
-}
-
-.box1 a img{
-    width: 60%;
-    height: 60%; 
-    border: 3px black dotted;   
-}
-
-.box1 a img:hover{
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
-}
-
-.box2{
-    background: white; 
-    width: 23%;
-    height: 28%;
-    position: absolute;
-    z-index: 1;
-    margin-top: 8%;
-    margin-left: -65%;
-}
-
-.box2-text p{
-    margin-top: 15%;
-    margin-left: 25%;
-    color: black;
-    text-align: center;
-    font-family: "Indie Flower", sans-serif;
-    font-size: 150%;
-    line-height: 15px;
-}
-
-.box3{
-    padding-top: 8%;
-    margin-left: -35%;
-    position: absolute;
-    z-index: 1;
-}
-
-.box3 a img{
-    width: 60%;
-    height: 60%;    
-}
-
-.box3 a img:hover{
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
-}
-
-.box4{
-    background: white; 
-    width: 20%;
-    height: 27%;
-    position: absolute;
-    margin-top: 21%;
-    margin-left: -23%;
-    border: 3px black dotted;
-    z-index: 2;
-}
-
-.box4-text p{
-    margin-top: 15%;
-    margin-left: auto;
-    margin-right: auto;
-    color:black;
-    text-align: center;
-    font-family: "Indie Flower", sans-serif;
-    font-size: 150%;
-    line-height: 15px;
-}
-
+/**/
 @media screen and (max-width: 1470px){
     .box-container{
         height: 530px;
@@ -390,7 +427,6 @@ header  div  p{
     }
 
     .box3{
-        /*padding-top: 8%;*/
         margin-top: 4%;
     }
 
@@ -558,40 +594,4 @@ header  div  p{
     .box4 p{
         font-size: 90%;
     }
-}
-
-.products{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    padding-top: 8%;
-    /*margin: auto;
-    width: 85%;*/
-    margin-left: auto;
-    margin-right: auto;
-    width: 85%;
-}
-
-/*.product{
-    position: relative;
-}*/
-
-.product-img a img{
-    width: 80%;
-    height: 80%;
-    border: 4px #f4ede1 dotted;
-}
-
-.product-text{
-    margin-left: 0;
-    width: 80%;
-    text-align: center;
-    font-size: 125%;
-    font-family: "Indie Flower", sans-serif;
-    font-weight: bold;
-    line-height: 12px;
-}
-
-.product-img-blur{
-    transition: 1s;
-    filter: blur(5px);
 }

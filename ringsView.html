@@ -6,12 +6,12 @@
     <title>Jewelry Palace</title>
     <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="views.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/views.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
+    <header> <!--navigation-->
         <div>
             <h1>Jewelry Palace</h1>
             <p>Life isn't perfect but your jewelry can be.</p>      
@@ -41,8 +41,8 @@
 
     <div class="container">
         <div class="item-container">
-            <div class="items">
-                <div class="item"> <!--u okviru ovog diva, bice jedan div za sliku, i jedan div za tekst ispod slike-->
+            <div class="items"> <!--display rings-->
+                <div class="item"> 
                     <div class="product-img">
                         <a href="ring1.html">
                             <img src="images/ring1.jpg" alt="Rose gold thin ring">
@@ -55,7 +55,7 @@
                     </div>
                 </div>
     
-                <div class="item"> <!--u okviru ovog diva, bice jedan div za sliku, i jedan div za tekst ispod slike-->
+                <div class="item"> 
                     <div class="product-img">
                         <a href="ring2.html">
                             <img src="images/ring2.jpg" alt="Double heart ring">
@@ -73,7 +73,7 @@
 
 </body>
 
-<script>
+<script> /*javascript code for bluring image on hover*/
     const productImages = document.querySelectorAll('.product-img');
 
     productImages.forEach(productImages => {

@@ -6,11 +6,11 @@
     <title>Jewelry Palace</title>
     <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
+    <header> <!--navigation-->
         <div>
             <h1>Jewelry Palace</h1>
             <p>Life isn't perfect but your jewelry can be.</p>      
@@ -39,7 +39,7 @@
     </header>
 
     <div class="container">
-        <div> 
+        <div>  <!--bestseller-->
             <div class="box-container"> 
                 <h2>BESTSELLER</h2>   
                 
@@ -77,10 +77,7 @@
             </div>   
         </div>
        
-
-
-
-        <div class="products"> 
+        <div class="products"> <!--all products-->
             <div class="product vis-hid"> 
                 <div class="product-img">
                     <a href="bestseller1.html">
@@ -185,12 +182,11 @@
                     <p><label style="font-weight: bolder;">Price: </label> 120$</p>
                 </div>
             </div>
-
         </div>
     </div>
 </body>
 
-<script>
+<script> /*javascript code for bluring image on hover*/
     const productImages = document.querySelectorAll('.product-img');
 
     productImages.forEach(productImages => {
